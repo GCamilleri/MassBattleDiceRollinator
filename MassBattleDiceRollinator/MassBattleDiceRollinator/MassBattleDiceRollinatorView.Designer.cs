@@ -38,14 +38,14 @@
 			this.btnReset = new System.Windows.Forms.Button();
 			this.spcMain = new System.Windows.Forms.SplitContainer();
 			this.txtOutput = new System.Windows.Forms.TextBox();
+			this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+			this.btnClearOutput = new System.Windows.Forms.Button();
 			this.aucAttackingUnit1 = new MassBattleDiceRollinator.AttackingUnitControl();
 			this.aucAttackingUnit2 = new MassBattleDiceRollinator.AttackingUnitControl();
 			this.aucAttackingUnit3 = new MassBattleDiceRollinator.AttackingUnitControl();
 			this.ducDefendingUnit1 = new MassBattleDiceRollinator.DefendingUnitControl();
 			this.ducDefendingUnit2 = new MassBattleDiceRollinator.DefendingUnitControl();
 			this.ducDefendingUnit3 = new MassBattleDiceRollinator.DefendingUnitControl();
-			this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-			this.btnClearOutput = new System.Windows.Forms.Button();
 			this.tableLayoutPanel1.SuspendLayout();
 			this.tableLayoutPanel3.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.spcMain)).BeginInit();
@@ -166,11 +166,9 @@
 			// btnReset
 			// 
 			this.btnReset.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnReset.AutoSize = true;
-			this.btnReset.Location = new System.Drawing.Point(3, 2);
-			this.btnReset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+			this.btnReset.Location = new System.Drawing.Point(45, 3);
 			this.btnReset.Name = "btnReset";
-			this.btnReset.Size = new System.Drawing.Size(66, 25);
+			this.btnReset.Size = new System.Drawing.Size(100, 25);
 			this.btnReset.TabIndex = 13;
 			this.btnReset.Text = "Reset All";
 			this.btnReset.UseVisualStyleBackColor = true;
@@ -209,6 +207,35 @@
 			this.txtOutput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
 			this.txtOutput.Size = new System.Drawing.Size(355, 658);
 			this.txtOutput.TabIndex = 0;
+			// 
+			// tableLayoutPanel2
+			// 
+			this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.tableLayoutPanel2.AutoSize = true;
+			this.tableLayoutPanel2.ColumnCount = 3;
+			this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+			this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+			this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+			this.tableLayoutPanel2.Controls.Add(this.btnReset, 0, 0);
+			this.tableLayoutPanel2.Controls.Add(this.btnClearOutput, 2, 0);
+			this.tableLayoutPanel2.Location = new System.Drawing.Point(523, 3);
+			this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+			this.tableLayoutPanel2.RowCount = 1;
+			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
+			this.tableLayoutPanel2.Size = new System.Drawing.Size(254, 31);
+			this.tableLayoutPanel2.TabIndex = 14;
+			// 
+			// btnClearOutput
+			// 
+			this.btnClearOutput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.btnClearOutput.Location = new System.Drawing.Point(151, 3);
+			this.btnClearOutput.Name = "btnClearOutput";
+			this.btnClearOutput.Size = new System.Drawing.Size(100, 25);
+			this.btnClearOutput.TabIndex = 14;
+			this.btnClearOutput.Text = "Clear Output";
+			this.btnClearOutput.UseVisualStyleBackColor = true;
+			this.btnClearOutput.Click += new System.EventHandler(this.btnClearOutput_Click);
 			// 
 			// aucAttackingUnit1
 			// 
@@ -282,33 +309,6 @@
 			this.ducDefendingUnit3.Size = new System.Drawing.Size(254, 286);
 			this.ducDefendingUnit3.TabIndex = 5;
 			// 
-			// tableLayoutPanel2
-			// 
-			this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.tableLayoutPanel2.AutoSize = true;
-			this.tableLayoutPanel2.ColumnCount = 2;
-			this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-			this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-			this.tableLayoutPanel2.Controls.Add(this.btnReset, 0, 0);
-			this.tableLayoutPanel2.Controls.Add(this.btnClearOutput, 1, 0);
-			this.tableLayoutPanel2.Location = new System.Drawing.Point(614, 3);
-			this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-			this.tableLayoutPanel2.RowCount = 1;
-			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-			this.tableLayoutPanel2.Size = new System.Drawing.Size(163, 31);
-			this.tableLayoutPanel2.TabIndex = 14;
-			// 
-			// btnClearOutput
-			// 
-			this.btnClearOutput.AutoSize = true;
-			this.btnClearOutput.Location = new System.Drawing.Point(75, 3);
-			this.btnClearOutput.Name = "btnClearOutput";
-			this.btnClearOutput.Size = new System.Drawing.Size(85, 25);
-			this.btnClearOutput.TabIndex = 14;
-			this.btnClearOutput.Text = "Clear Output";
-			this.btnClearOutput.UseVisualStyleBackColor = true;
-			this.btnClearOutput.Click += new System.EventHandler(this.btnClearOutput_Click);
-			// 
 			// MassBattleDiceRollinatorView
 			// 
 			this.AcceptButton = this.btnRollinate;
@@ -331,7 +331,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.spcMain)).EndInit();
 			this.spcMain.ResumeLayout(false);
 			this.tableLayoutPanel2.ResumeLayout(false);
-			this.tableLayoutPanel2.PerformLayout();
 			this.ResumeLayout(false);
 
 		}
