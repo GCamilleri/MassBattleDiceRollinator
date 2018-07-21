@@ -8,9 +8,9 @@
 
 		public int _Attacks;
 		public int _AttackBonus;
-		public int _DiceMultiplier;
+		public int _DiceMultiplier = 1;
 		public int _DamageBonus;
-		public decimal _TotalDamageMultiplier;
+		public decimal _TotalDamageMultiplier = 1;
 		public DiceType _DiceType;
 
 		public int Attacks

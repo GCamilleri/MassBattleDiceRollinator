@@ -45,7 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Advantage.cs" />
     <Compile Include="AttackingUnit.cs" />
+    <Compile Include="Casualty.cs" />
     <Compile Include="DefendingUnit.cs" />
     <Compile Include="DefendingUnitControl.cs">
       <SubType>UserControl</SubType>

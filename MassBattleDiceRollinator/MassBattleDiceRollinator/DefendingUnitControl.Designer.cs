@@ -39,7 +39,7 @@
 			this.lblArmourClass = new System.Windows.Forms.Label();
 			this.lblSize = new System.Windows.Forms.Label();
 			this.txtName = new System.Windows.Forms.TextBox();
-			this.textBox3 = new System.Windows.Forms.TextBox();
+			this.txtSkirmishReport = new System.Windows.Forms.TextBox();
 			this.chkEnabled = new System.Windows.Forms.CheckBox();
 			this.tableLayoutPanel1.SuspendLayout();
 			this.SuspendLayout();
@@ -61,7 +61,7 @@
 			this.tableLayoutPanel1.Controls.Add(this.lblArmourClass, 0, 2);
 			this.tableLayoutPanel1.Controls.Add(this.lblSize, 0, 1);
 			this.tableLayoutPanel1.Controls.Add(this.txtName, 0, 0);
-			this.tableLayoutPanel1.Controls.Add(this.textBox3, 0, 7);
+			this.tableLayoutPanel1.Controls.Add(this.txtSkirmishReport, 0, 7);
 			this.tableLayoutPanel1.Controls.Add(this.chkEnabled, 1, 0);
 			this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -83,19 +83,21 @@
 			// 
 			this.lblDamageThreshold.Anchor = System.Windows.Forms.AnchorStyles.Left;
 			this.lblDamageThreshold.AutoSize = true;
+			this.lblDamageThreshold.Enabled = false;
 			this.lblDamageThreshold.Location = new System.Drawing.Point(3, 137);
 			this.lblDamageThreshold.Name = "lblDamageThreshold";
 			this.lblDamageThreshold.Size = new System.Drawing.Size(107, 15);
-			this.lblDamageThreshold.TabIndex = 6;
+			this.lblDamageThreshold.TabIndex = 7;
 			this.lblDamageThreshold.Text = "Damage Threshold";
 			// 
 			// chkCharacter
 			// 
 			this.chkCharacter.AutoSize = true;
+			this.chkCharacter.Enabled = false;
 			this.chkCharacter.Location = new System.Drawing.Point(3, 108);
 			this.chkCharacter.Name = "chkCharacter";
 			this.chkCharacter.Size = new System.Drawing.Size(77, 19);
-			this.chkCharacter.TabIndex = 5;
+			this.chkCharacter.TabIndex = 6;
 			this.chkCharacter.Text = "Character";
 			this.chkCharacter.UseVisualStyleBackColor = true;
 			this.chkCharacter.CheckedChanged += new System.EventHandler(this.chkCharacter_CheckedChanged);
@@ -104,88 +106,100 @@
 			// 
 			this.txtDamageThreshold.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+			this.txtDamageThreshold.Enabled = false;
 			this.txtDamageThreshold.Location = new System.Drawing.Point(144, 133);
 			this.txtDamageThreshold.Name = "txtDamageThreshold";
 			this.txtDamageThreshold.Size = new System.Drawing.Size(100, 23);
-			this.txtDamageThreshold.TabIndex = 7;
+			this.txtDamageThreshold.TabIndex = 8;
 			// 
 			// lblHitPoints
 			// 
 			this.lblHitPoints.Anchor = System.Windows.Forms.AnchorStyles.Left;
 			this.lblHitPoints.AutoSize = true;
+			this.lblHitPoints.Enabled = false;
 			this.lblHitPoints.Location = new System.Drawing.Point(3, 166);
 			this.lblHitPoints.Name = "lblHitPoints";
 			this.lblHitPoints.Size = new System.Drawing.Size(59, 15);
-			this.lblHitPoints.TabIndex = 8;
+			this.lblHitPoints.TabIndex = 9;
 			this.lblHitPoints.Text = "Hit Points";
+			this.lblHitPoints.Visible = false;
 			// 
 			// txtHitPoints
 			// 
 			this.txtHitPoints.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+			this.txtHitPoints.Enabled = false;
 			this.txtHitPoints.Location = new System.Drawing.Point(144, 162);
 			this.txtHitPoints.Name = "txtHitPoints";
 			this.txtHitPoints.Size = new System.Drawing.Size(100, 23);
-			this.txtHitPoints.TabIndex = 9;
+			this.txtHitPoints.TabIndex = 10;
+			this.txtHitPoints.Visible = false;
 			// 
 			// txtArmourClass
 			// 
 			this.txtArmourClass.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+			this.txtArmourClass.Enabled = false;
 			this.txtArmourClass.Location = new System.Drawing.Point(144, 57);
 			this.txtArmourClass.Name = "txtArmourClass";
 			this.txtArmourClass.Size = new System.Drawing.Size(100, 23);
-			this.txtArmourClass.TabIndex = 4;
+			this.txtArmourClass.TabIndex = 5;
 			// 
 			// txtSize
 			// 
 			this.txtSize.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+			this.txtSize.Enabled = false;
 			this.txtSize.Location = new System.Drawing.Point(144, 28);
 			this.txtSize.Name = "txtSize";
 			this.txtSize.Size = new System.Drawing.Size(100, 23);
-			this.txtSize.TabIndex = 2;
+			this.txtSize.TabIndex = 3;
 			// 
 			// lblArmourClass
 			// 
 			this.lblArmourClass.Anchor = System.Windows.Forms.AnchorStyles.Left;
 			this.lblArmourClass.AutoSize = true;
+			this.lblArmourClass.Enabled = false;
 			this.lblArmourClass.Location = new System.Drawing.Point(3, 61);
 			this.lblArmourClass.Name = "lblArmourClass";
 			this.lblArmourClass.Size = new System.Drawing.Size(78, 15);
-			this.lblArmourClass.TabIndex = 3;
+			this.lblArmourClass.TabIndex = 4;
 			this.lblArmourClass.Text = "Armour Class";
 			// 
 			// lblSize
 			// 
 			this.lblSize.Anchor = System.Windows.Forms.AnchorStyles.Left;
 			this.lblSize.AutoSize = true;
+			this.lblSize.Enabled = false;
 			this.lblSize.Location = new System.Drawing.Point(3, 32);
 			this.lblSize.Name = "lblSize";
 			this.lblSize.Size = new System.Drawing.Size(27, 15);
-			this.lblSize.TabIndex = 1;
+			this.lblSize.TabIndex = 2;
 			this.lblSize.Text = "Size";
 			// 
 			// txtName
 			// 
 			this.txtName.BackColor = System.Drawing.SystemColors.Control;
 			this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.txtName.Enabled = false;
 			this.txtName.Location = new System.Drawing.Point(3, 3);
 			this.txtName.Name = "txtName";
 			this.txtName.Size = new System.Drawing.Size(100, 16);
-			this.txtName.TabIndex = 0;
+			this.txtName.TabIndex = 1;
 			this.txtName.Text = "[[Unit Name]]";
 			// 
-			// textBox3
+			// txtSkirmishReport
 			// 
-			this.tableLayoutPanel1.SetColumnSpan(this.textBox3, 2);
-			this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox3.Location = new System.Drawing.Point(3, 191);
-			this.textBox3.Multiline = true;
-			this.textBox3.Name = "textBox3";
-			this.textBox3.ReadOnly = true;
-			this.textBox3.Size = new System.Drawing.Size(241, 82);
-			this.textBox3.TabIndex = 10;
+			this.tableLayoutPanel1.SetColumnSpan(this.txtSkirmishReport, 2);
+			this.txtSkirmishReport.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.txtSkirmishReport.Enabled = false;
+			this.txtSkirmishReport.Location = new System.Drawing.Point(3, 191);
+			this.txtSkirmishReport.Multiline = true;
+			this.txtSkirmishReport.Name = "txtSkirmishReport";
+			this.txtSkirmishReport.ReadOnly = true;
+			this.txtSkirmishReport.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+			this.txtSkirmishReport.Size = new System.Drawing.Size(241, 82);
+			this.txtSkirmishReport.TabIndex = 11;
 			// 
 			// chkEnabled
 			// 
@@ -193,7 +207,7 @@
 			this.chkEnabled.Location = new System.Drawing.Point(144, 3);
 			this.chkEnabled.Name = "chkEnabled";
 			this.chkEnabled.Size = new System.Drawing.Size(68, 19);
-			this.chkEnabled.TabIndex = 11;
+			this.chkEnabled.TabIndex = 0;
 			this.chkEnabled.Text = "Enabled";
 			this.chkEnabled.UseVisualStyleBackColor = true;
 			this.chkEnabled.CheckedChanged += new System.EventHandler(this.chkEnabled_CheckedChanged);
@@ -229,7 +243,7 @@
 		private System.Windows.Forms.TextBox txtSize;
 		private System.Windows.Forms.Label lblSize;
 		private System.Windows.Forms.TextBox txtName;
-		private System.Windows.Forms.TextBox textBox3;
+		private System.Windows.Forms.TextBox txtSkirmishReport;
 		private System.Windows.Forms.CheckBox chkEnabled;
 	}
 }

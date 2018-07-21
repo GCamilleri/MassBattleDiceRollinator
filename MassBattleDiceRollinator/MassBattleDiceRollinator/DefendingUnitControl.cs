@@ -33,12 +33,14 @@ namespace MassBattleDiceRollinator
 			txtSize.DataBindings.Clear();
 			chkCharacter.DataBindings.Clear();
 			chkEnabled.DataBindings.Clear();
+			txtSkirmishReport.DataBindings.Clear();
 
 			txtName.DataBindings.Add("Text", DefendingUnit, nameof(DefendingUnit.Name), false, DataSourceUpdateMode.OnPropertyChanged);
 			txtArmourClass.DataBindings.Add("Text", DefendingUnit, nameof(DefendingUnit.ArmourClass), false, DataSourceUpdateMode.OnPropertyChanged);
 			txtDamageThreshold.DataBindings.Add("Text", DefendingUnit, nameof(DefendingUnit.DamageThreshold), false, DataSourceUpdateMode.OnPropertyChanged);
 			txtHitPoints.DataBindings.Add("Text", DefendingUnit, nameof(DefendingUnit.HitPoints), false, DataSourceUpdateMode.OnPropertyChanged);
 			txtSize.DataBindings.Add("Text", DefendingUnit, nameof(DefendingUnit.Size), false, DataSourceUpdateMode.OnPropertyChanged);
+			txtSkirmishReport.DataBindings.Add("Text", DefendingUnit, nameof(DefendingUnit.SkirmishReport), false, DataSourceUpdateMode.OnPropertyChanged);
 			chkCharacter.DataBindings.Add("Checked", DefendingUnit, nameof(DefendingUnit.Character), false, DataSourceUpdateMode.OnPropertyChanged);
 			chkEnabled.DataBindings.Add("Checked", DefendingUnit, nameof(DefendingUnit.Enabled), false, DataSourceUpdateMode.OnPropertyChanged);
 		}
@@ -74,6 +76,11 @@ namespace MassBattleDiceRollinator
 				txtName.Enabled = enabledCheckBox.Checked;
 				txtSize.Enabled = enabledCheckBox.Checked;
 				chkCharacter.Enabled = enabledCheckBox.Checked;
+				lblArmourClass.Enabled = enabledCheckBox.Checked;
+				lblDamageThreshold.Enabled = enabledCheckBox.Checked;
+				lblHitPoints.Enabled = enabledCheckBox.Checked;
+				lblSize.Enabled = enabledCheckBox.Checked;
+				txtSkirmishReport.Enabled = enabledCheckBox.Checked;
 			}
 		}
 	}

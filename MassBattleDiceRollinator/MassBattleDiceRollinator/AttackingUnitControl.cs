@@ -57,6 +57,13 @@ namespace MassBattleDiceRollinator
 				txtDamageBonus.Enabled = enabledCheckBox.Checked;
 				txtDiceMultiplier.Enabled = enabledCheckBox.Checked;
 				txtTotalDamageMultiplier.Enabled = enabledCheckBox.Checked;
+				cboDamageDice.Enabled = enabledCheckBox.Checked;
+				lblAttacks.Enabled = enabledCheckBox.Checked;
+				lblTotalDamageMultiplier.Enabled = enabledCheckBox.Checked;
+				lblAttackBonus.Enabled = enabledCheckBox.Checked;
+				lblDamageBonus.Enabled = enabledCheckBox.Checked;
+				lblDamageDice.Enabled = enabledCheckBox.Checked;
+				lblDiceMultiplier.Enabled = enabledCheckBox.Checked;
 			}
 		}
 	}

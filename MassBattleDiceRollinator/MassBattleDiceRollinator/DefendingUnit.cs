@@ -1,12 +1,16 @@
-﻿namespace MassBattleDiceRollinator
+﻿using System.Collections.Generic;
+using System.Linq;
+
+namespace MassBattleDiceRollinator
 {
 	public class DefendingUnit : Unit
 	{
-		public int _Size;
-		public int _ArmourClass;
-		public bool _Character;
-		public int _DamageThreshold;
-		public int _HitPoints;
+		private int _Size;
+		private int _ArmourClass;
+		private bool _Character;
+		private int _DamageThreshold;
+		private int _HitPoints;
+		private string _SkirmishReport;
 
 		public DefendingUnit(string name) : base(name)
 		{
@@ -61,5 +65,23 @@
 				OnPropertyChanged(nameof(HitPoints));
 			}
 		}
+
+		public string SkirmishReport
+		{
+			get { return _SkirmishReport; }
+			set
+			{
+				_SkirmishReport = value;
+				OnPropertyChanged(nameof(SkirmishReport));
+			}
+		}
+
+		public int DamageTaken { get; set; }
+
+		public List<Casualty> Casualties { get; set; } = new List<Casualty>();
+
+		public int TotalHitsTaken => HitsTakenFromAttackers.Sum(h => h.Value);
+
+		public Dictionary<AttackingUnit, int> HitsTakenFromAttackers { get; set; } = new Dictionary<AttackingUnit, int>();
 	}
 }
