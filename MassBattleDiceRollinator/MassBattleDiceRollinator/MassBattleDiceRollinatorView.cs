@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace MassBattleDiceRollinator
 {
-    public partial class Form1 : Form
-    {
-        public Form1()
-        {
-            InitializeComponent();
-        }
-    }
+	public partial class MassBattleDiceRollinatorView : Form
+	{
+		public MassBattleDiceRollinatorView()
+		{
+			InitializeComponent();
+		}
+
+		private void aucAttackingUnit2_Load(object sender, EventArgs e)
+		{
+
+		}
+	}
 }
