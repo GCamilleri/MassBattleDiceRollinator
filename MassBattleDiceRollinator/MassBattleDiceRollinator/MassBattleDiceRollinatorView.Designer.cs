@@ -29,6 +29,12 @@
 		private void InitializeComponent()
 		{
 			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+			this.aucAttackingUnit1 = new MassBattleDiceRollinator.AttackingUnitControl();
+			this.aucAttackingUnit2 = new MassBattleDiceRollinator.AttackingUnitControl();
+			this.aucAttackingUnit3 = new MassBattleDiceRollinator.AttackingUnitControl();
+			this.ducDefendingUnit1 = new MassBattleDiceRollinator.DefendingUnitControl();
+			this.ducDefendingUnit2 = new MassBattleDiceRollinator.DefendingUnitControl();
+			this.ducDefendingUnit3 = new MassBattleDiceRollinator.DefendingUnitControl();
 			this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
 			this.label1 = new System.Windows.Forms.Label();
 			this.radAdvantage = new System.Windows.Forms.RadioButton();
@@ -37,12 +43,6 @@
 			this.button1 = new System.Windows.Forms.Button();
 			this.spcMain = new System.Windows.Forms.SplitContainer();
 			this.txtOutput = new System.Windows.Forms.TextBox();
-			this.aucAttackingUnit1 = new MassBattleDiceRollinator.AttackingUnitControl();
-			this.aucAttackingUnit2 = new MassBattleDiceRollinator.AttackingUnitControl();
-			this.aucAttackingUnit3 = new MassBattleDiceRollinator.AttackingUnitControl();
-			this.ducDefendingUnit1 = new MassBattleDiceRollinator.DefendingUnitControl();
-			this.ducDefendingUnit2 = new MassBattleDiceRollinator.DefendingUnitControl();
-			this.ducDefendingUnit3 = new MassBattleDiceRollinator.DefendingUnitControl();
 			this.tableLayoutPanel1.SuspendLayout();
 			this.tableLayoutPanel3.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.spcMain)).BeginInit();
@@ -78,6 +78,72 @@
 			this.tableLayoutPanel1.Size = new System.Drawing.Size(780, 653);
 			this.tableLayoutPanel1.TabIndex = 0;
 			// 
+			// aucAttackingUnit1
+			// 
+			this.aucAttackingUnit1.AutoSize = true;
+			this.aucAttackingUnit1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+			this.aucAttackingUnit1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.aucAttackingUnit1.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.aucAttackingUnit1.Location = new System.Drawing.Point(3, 23);
+			this.aucAttackingUnit1.Name = "aucAttackingUnit1";
+			this.aucAttackingUnit1.Size = new System.Drawing.Size(254, 217);
+			this.aucAttackingUnit1.TabIndex = 0;
+			// 
+			// aucAttackingUnit2
+			// 
+			this.aucAttackingUnit2.AutoSize = true;
+			this.aucAttackingUnit2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+			this.aucAttackingUnit2.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.aucAttackingUnit2.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.aucAttackingUnit2.Location = new System.Drawing.Point(263, 23);
+			this.aucAttackingUnit2.Name = "aucAttackingUnit2";
+			this.aucAttackingUnit2.Size = new System.Drawing.Size(254, 217);
+			this.aucAttackingUnit2.TabIndex = 1;
+			// 
+			// aucAttackingUnit3
+			// 
+			this.aucAttackingUnit3.AutoSize = true;
+			this.aucAttackingUnit3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+			this.aucAttackingUnit3.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.aucAttackingUnit3.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.aucAttackingUnit3.Location = new System.Drawing.Point(523, 23);
+			this.aucAttackingUnit3.Name = "aucAttackingUnit3";
+			this.aucAttackingUnit3.Size = new System.Drawing.Size(254, 217);
+			this.aucAttackingUnit3.TabIndex = 2;
+			// 
+			// ducDefendingUnit1
+			// 
+			this.ducDefendingUnit1.AutoSize = true;
+			this.ducDefendingUnit1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+			this.ducDefendingUnit1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.ducDefendingUnit1.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.ducDefendingUnit1.Location = new System.Drawing.Point(3, 383);
+			this.ducDefendingUnit1.Name = "ducDefendingUnit1";
+			this.ducDefendingUnit1.Size = new System.Drawing.Size(254, 267);
+			this.ducDefendingUnit1.TabIndex = 3;
+			// 
+			// ducDefendingUnit2
+			// 
+			this.ducDefendingUnit2.AutoSize = true;
+			this.ducDefendingUnit2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+			this.ducDefendingUnit2.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.ducDefendingUnit2.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.ducDefendingUnit2.Location = new System.Drawing.Point(263, 383);
+			this.ducDefendingUnit2.Name = "ducDefendingUnit2";
+			this.ducDefendingUnit2.Size = new System.Drawing.Size(254, 267);
+			this.ducDefendingUnit2.TabIndex = 4;
+			// 
+			// ducDefendingUnit3
+			// 
+			this.ducDefendingUnit3.AutoSize = true;
+			this.ducDefendingUnit3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+			this.ducDefendingUnit3.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.ducDefendingUnit3.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.ducDefendingUnit3.Location = new System.Drawing.Point(523, 383);
+			this.ducDefendingUnit3.Name = "ducDefendingUnit3";
+			this.ducDefendingUnit3.Size = new System.Drawing.Size(254, 267);
+			this.ducDefendingUnit3.TabIndex = 5;
+			// 
 			// tableLayoutPanel3
 			// 
 			this.tableLayoutPanel3.AutoSize = true;
@@ -106,18 +172,16 @@
 			this.label1.Location = new System.Drawing.Point(3, 0);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(102, 19);
-			this.label1.TabIndex = 2;
+			this.label1.TabIndex = 0;
 			this.label1.Text = "Attackers have:";
 			// 
 			// radAdvantage
 			// 
 			this.radAdvantage.AutoSize = true;
-			this.radAdvantage.Checked = true;
 			this.radAdvantage.Location = new System.Drawing.Point(3, 52);
 			this.radAdvantage.Name = "radAdvantage";
 			this.radAdvantage.Size = new System.Drawing.Size(93, 23);
-			this.radAdvantage.TabIndex = 0;
-			this.radAdvantage.TabStop = true;
+			this.radAdvantage.TabIndex = 2;
 			this.radAdvantage.Text = "Advantage";
 			this.radAdvantage.UseVisualStyleBackColor = true;
 			// 
@@ -127,17 +191,19 @@
 			this.radDisadvantage.Location = new System.Drawing.Point(3, 81);
 			this.radDisadvantage.Name = "radDisadvantage";
 			this.radDisadvantage.Size = new System.Drawing.Size(110, 23);
-			this.radDisadvantage.TabIndex = 1;
+			this.radDisadvantage.TabIndex = 3;
 			this.radDisadvantage.Text = "Disadvantage";
 			this.radDisadvantage.UseVisualStyleBackColor = true;
 			// 
 			// radNone
 			// 
 			this.radNone.AutoSize = true;
+			this.radNone.Checked = true;
 			this.radNone.Location = new System.Drawing.Point(3, 23);
 			this.radNone.Name = "radNone";
 			this.radNone.Size = new System.Drawing.Size(60, 23);
 			this.radNone.TabIndex = 1;
+			this.radNone.TabStop = true;
 			this.radNone.Text = "None";
 			this.radNone.UseVisualStyleBackColor = true;
 			// 
@@ -145,10 +211,10 @@
 			// 
 			this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.button1.Font = new System.Drawing.Font("Segoe UI", 16F);
-			this.button1.Location = new System.Drawing.Point(262, 256);
+			this.button1.Location = new System.Drawing.Point(263, 256);
 			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(253, 111);
-			this.button1.TabIndex = 13;
+			this.button1.Size = new System.Drawing.Size(254, 111);
+			this.button1.TabIndex = 6;
 			this.button1.Text = "ROLLINATE";
 			this.button1.UseVisualStyleBackColor = true;
 			// 
@@ -181,73 +247,6 @@
 			this.txtOutput.Size = new System.Drawing.Size(203, 653);
 			this.txtOutput.TabIndex = 0;
 			// 
-			// aucAttackingUnit1
-			// 
-			this.aucAttackingUnit1.AutoSize = true;
-			this.aucAttackingUnit1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-			this.aucAttackingUnit1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.aucAttackingUnit1.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.aucAttackingUnit1.Location = new System.Drawing.Point(3, 23);
-			this.aucAttackingUnit1.Name = "aucAttackingUnit1";
-			this.aucAttackingUnit1.Size = new System.Drawing.Size(253, 217);
-			this.aucAttackingUnit1.TabIndex = 7;
-			// 
-			// aucAttackingUnit2
-			// 
-			this.aucAttackingUnit2.AutoSize = true;
-			this.aucAttackingUnit2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-			this.aucAttackingUnit2.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.aucAttackingUnit2.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.aucAttackingUnit2.Location = new System.Drawing.Point(262, 23);
-			this.aucAttackingUnit2.Name = "aucAttackingUnit2";
-			this.aucAttackingUnit2.Size = new System.Drawing.Size(253, 217);
-			this.aucAttackingUnit2.TabIndex = 7;
-			this.aucAttackingUnit2.Load += new System.EventHandler(this.aucAttackingUnit2_Load);
-			// 
-			// aucAttackingUnit3
-			// 
-			this.aucAttackingUnit3.AutoSize = true;
-			this.aucAttackingUnit3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-			this.aucAttackingUnit3.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.aucAttackingUnit3.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.aucAttackingUnit3.Location = new System.Drawing.Point(521, 23);
-			this.aucAttackingUnit3.Name = "aucAttackingUnit3";
-			this.aucAttackingUnit3.Size = new System.Drawing.Size(256, 217);
-			this.aucAttackingUnit3.TabIndex = 7;
-			// 
-			// ducDefendingUnit1
-			// 
-			this.ducDefendingUnit1.AutoSize = true;
-			this.ducDefendingUnit1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-			this.ducDefendingUnit1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.ducDefendingUnit1.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.ducDefendingUnit1.Location = new System.Drawing.Point(3, 383);
-			this.ducDefendingUnit1.Name = "ducDefendingUnit1";
-			this.ducDefendingUnit1.Size = new System.Drawing.Size(253, 267);
-			this.ducDefendingUnit1.TabIndex = 8;
-			// 
-			// ducDefendingUnit2
-			// 
-			this.ducDefendingUnit2.AutoSize = true;
-			this.ducDefendingUnit2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-			this.ducDefendingUnit2.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.ducDefendingUnit2.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.ducDefendingUnit2.Location = new System.Drawing.Point(262, 383);
-			this.ducDefendingUnit2.Name = "ducDefendingUnit2";
-			this.ducDefendingUnit2.Size = new System.Drawing.Size(253, 267);
-			this.ducDefendingUnit2.TabIndex = 9;
-			// 
-			// ducDefendingUnit3
-			// 
-			this.ducDefendingUnit3.AutoSize = true;
-			this.ducDefendingUnit3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-			this.ducDefendingUnit3.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.ducDefendingUnit3.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.ducDefendingUnit3.Location = new System.Drawing.Point(521, 383);
-			this.ducDefendingUnit3.Name = "ducDefendingUnit3";
-			this.ducDefendingUnit3.Size = new System.Drawing.Size(256, 267);
-			this.ducDefendingUnit3.TabIndex = 10;
-			// 
 			// MassBattleDiceRollinatorView
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -258,6 +257,7 @@
 			this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.Name = "MassBattleDiceRollinatorView";
 			this.Text = "Mass Battle Dice Rollinator";
+			this.Load += new System.EventHandler(this.MassBattleDiceRollinatorView_Load);
 			this.tableLayoutPanel1.ResumeLayout(false);
 			this.tableLayoutPanel1.PerformLayout();
 			this.tableLayoutPanel3.ResumeLayout(false);
@@ -290,4 +290,3 @@
 		private System.Windows.Forms.Label label1;
 	}
 }
-

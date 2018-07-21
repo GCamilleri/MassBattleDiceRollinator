@@ -45,12 +45,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AttackingUnit.cs" />
+    <Compile Include="DefendingUnit.cs" />
     <Compile Include="DefendingUnitControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="DefendingUnitControl.Designer.cs">
       <DependentUpon>DefendingUnitControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="DiceType.cs" />
     <Compile Include="MassBattleDiceRollinatorView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +87,7 @@
     <EmbeddedResource Include="AttackingUnitControl.resx">
       <DependentUpon>AttackingUnitControl.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Properties\DataSources\AttackingUnitControl.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

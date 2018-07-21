@@ -1,23 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace MassBattleDiceRollinator
 {
 	public partial class MassBattleDiceRollinatorView : Form
 	{
+		private IEnumerable<AttackingUnit> AttackingUnits;
+		private IEnumerable<DefendingUnit> DefendingUnits;
+
 		public MassBattleDiceRollinatorView()
 		{
 			InitializeComponent();
 		}
 
-		private void aucAttackingUnit2_Load(object sender, EventArgs e)
+		private void MassBattleDiceRollinatorView_Load(object sender, System.EventArgs e)
 		{
 
 		}
