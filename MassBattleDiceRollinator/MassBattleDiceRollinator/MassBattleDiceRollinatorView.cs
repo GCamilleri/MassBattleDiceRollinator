@@ -260,9 +260,9 @@ namespace MassBattleDiceRollinator
 
 					txtOutput.AppendText(skirmishReportSb.ToString());
 					txtOutput.AppendText(Environment.NewLine);
+					txtOutput.AppendText(Environment.NewLine);
 				}
 
-				txtOutput.AppendText(Environment.NewLine);
 				txtOutput.AppendText("------ End of Skirmish ------" + Environment.NewLine);
 				txtOutput.AppendText(Environment.NewLine);
 			}

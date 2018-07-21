@@ -104,8 +104,8 @@
 			// 
 			// txtDamageThreshold
 			// 
-			this.txtDamageThreshold.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+			this.txtDamageThreshold.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+			| System.Windows.Forms.AnchorStyles.Right)));
 			this.txtDamageThreshold.Enabled = false;
 			this.txtDamageThreshold.Location = new System.Drawing.Point(144, 133);
 			this.txtDamageThreshold.Name = "txtDamageThreshold";
@@ -126,8 +126,8 @@
 			// 
 			// txtHitPoints
 			// 
-			this.txtHitPoints.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+			this.txtHitPoints.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+			| System.Windows.Forms.AnchorStyles.Right)));
 			this.txtHitPoints.Enabled = false;
 			this.txtHitPoints.Location = new System.Drawing.Point(144, 162);
 			this.txtHitPoints.Name = "txtHitPoints";
@@ -137,8 +137,8 @@
 			// 
 			// txtArmourClass
 			// 
-			this.txtArmourClass.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+			this.txtArmourClass.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+			| System.Windows.Forms.AnchorStyles.Right)));
 			this.txtArmourClass.Enabled = false;
 			this.txtArmourClass.Location = new System.Drawing.Point(144, 57);
 			this.txtArmourClass.Name = "txtArmourClass";
@@ -147,8 +147,8 @@
 			// 
 			// txtSize
 			// 
-			this.txtSize.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+			this.txtSize.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+			| System.Windows.Forms.AnchorStyles.Right)));
 			this.txtSize.Enabled = false;
 			this.txtSize.Location = new System.Drawing.Point(144, 28);
 			this.txtSize.Name = "txtSize";

@@ -89,7 +89,6 @@
     <EmbeddedResource Include="AttackingUnitControl.resx">
       <DependentUpon>AttackingUnitControl.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Properties\DataSources\AttackingUnitControl.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -102,6 +101,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
