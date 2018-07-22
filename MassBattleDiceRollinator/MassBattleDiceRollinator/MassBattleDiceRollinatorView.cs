@@ -58,7 +58,7 @@ namespace MassBattleDiceRollinator
 					d.Casualties.Clear();
 				});
 
-				txtOutput.AppendText($"------Beginning Skirmish------" + Environment.NewLine);
+				txtOutput.AppendText($"------ Beginning Skirmish ------" + Environment.NewLine);
 				txtOutput.AppendText(Environment.NewLine);
 
 				var attackerAdvantage = Advantage.None;
@@ -156,6 +156,9 @@ namespace MassBattleDiceRollinator
 						txtOutput.AppendText(Environment.NewLine);
 					}
 
+					txtOutput.AppendText("--- Casualties ---");
+					txtOutput.AppendText(Environment.NewLine);
+
 					foreach (DefendingUnit defendingUnit in activeDefenders)
 					{
 						int totalDamage = 0;
@@ -200,37 +203,40 @@ namespace MassBattleDiceRollinator
 						{
 							int casualties = (int)Math.Floor(((double)defendingUnit.DamageTaken / defendingUnit.DamageThreshold));
 
-							var casualtyRandom = new Random();
-
-							foreach (int casualty in Enumerable.Range(0, casualties))
+							if (casualties > 0)
 							{
-								int severity = casualtyRandom.Next(0, 100);
+								var casualtyRandom = new Random();
 
-								if (severity < 25)
+								foreach (int casualty in Enumerable.Range(0, casualties))
+								{
+									int severity = casualtyRandom.Next(0, 100);
+
+									if (severity < 25)
+									{
+										defendingUnit.Casualties.Add(Casualty.Light);
+									}
+									else if (severity < 55)
+									{
+										defendingUnit.Casualties.Add(Casualty.Moderate);
+									}
+									else if (severity < 80)
+									{
+										defendingUnit.Casualties.Add(Casualty.Critical);
+									}
+									else if (severity < 100)
+									{
+										defendingUnit.Casualties.Add(Casualty.Fatal);
+									}
+									else
+									{
+										//error
+									}
+								}
+
+								if ((((double)defendingUnit.DamageTaken / defendingUnit.DamageThreshold) - casualties) > 0)
 								{
 									defendingUnit.Casualties.Add(Casualty.Light);
 								}
-								else if (severity < 55)
-								{
-									defendingUnit.Casualties.Add(Casualty.Moderate);
-								}
-								else if (severity < 80)
-								{
-									defendingUnit.Casualties.Add(Casualty.Critical);
-								}
-								else if (severity < 100)
-								{
-									defendingUnit.Casualties.Add(Casualty.Fatal);
-								}
-								else
-								{
-									//error
-								}
-							}
-
-							if ((((double)defendingUnit.DamageTaken / defendingUnit.DamageThreshold) - casualties) != 0)
-							{
-								defendingUnit.Casualties.Add(Casualty.Light);
 							}
 
 							var casualtyCounts = defendingUnit.Casualties
